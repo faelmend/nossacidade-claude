@@ -70,4 +70,5 @@ export interface Job {
   source?: 'NossaCidade' | 'LinkedIn' | 'Indeed' | 'Gupy' | 'Empresa'; // Origin of the job
   externalLink?: string; // If it's an external job
   logo?: string; // Specific logo for the job post (if different from business or external)
+  isVerified?: boolean;
 }

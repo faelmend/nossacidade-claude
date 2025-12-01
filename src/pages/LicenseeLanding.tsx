@@ -109,6 +109,7 @@ const LicenseeLanding: React.FC = () => {
                     <ul className="space-y-4">
                         <li className="flex items-start gap-3 text-blue-800 font-medium">
                             <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"/>
+                            {/* Fixed Syntax Error: Replaced > with &gt; */}
                             <span>Produto 100% Digital (Margem Líquida &gt; 90%).</span>
                         </li>
                         <li className="flex items-start gap-3 text-blue-800 font-medium">
@@ -204,7 +205,7 @@ const LicenseeLanding: React.FC = () => {
                 </div>
             </div>
             
-            {/* Scalability Section - NEW */}
+            {/* Scalability Section */}
             <div className="mt-16 bg-gradient-to-r from-blue-900 to-slate-900 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')]"></div>
                 <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
@@ -306,7 +307,7 @@ const LicenseeLanding: React.FC = () => {
           </div>
       </div>
 
-      {/* TERRITORY LOGIC SECTION - NEW */}
+      {/* TERRITORY LOGIC SECTION */}
       <div className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -378,7 +379,7 @@ const LicenseeLanding: React.FC = () => {
               <div className="bg-white text-slate-900 rounded-3xl p-2 max-w-3xl mx-auto shadow-2xl shadow-orange-500/20">
                   <div className="border-2 border-dashed border-slate-200 rounded-[20px] p-8 md:p-12 relative overflow-hidden">
                       
-                      {/* Ribbon - UPDATED SIZE AND COLOR */}
+                      {/* Ribbon */}
                       <div className="absolute top-0 right-0 bg-red-600 text-white text-lg font-black px-12 py-2 rotate-45 translate-x-12 translate-y-6 shadow-lg z-20">
                           90% OFF
                       </div>
@@ -391,10 +392,12 @@ const LicenseeLanding: React.FC = () => {
                               <div className="space-y-2">
                                   <div className="flex items-center gap-2 justify-center md:justify-start text-slate-400 line-through decoration-red-500 text-lg">
                                       <span>Valor Normal:</span>
-                                      <span>R$ 4.997,00</span>
+                                      {/* Updated Normal Price */}
+                                      <span>R$ 9.997,00</span>
                                   </div>
                                   <div className="flex items-center gap-3 justify-center md:justify-start">
-                                      <span className="text-5xl md:text-7xl font-black text-blue-900 tracking-tighter">R$ 497</span>
+                                      {/* Updated Promo Price */}
+                                      <span className="text-5xl md:text-7xl font-black text-blue-900 tracking-tighter">R$ 2.497</span>
                                       <div className="flex flex-col items-start">
                                           <span className="text-xs font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded animate-pulse">LOTE 1</span>
                                           <span className="text-sm text-slate-500">à vista</span>
@@ -409,20 +412,21 @@ const LicenseeLanding: React.FC = () => {
 
                           <div className="w-full md:w-auto flex flex-col gap-3">
                               <a 
-                                href="https://wa.me/5538999999999?text=Quero garantir minha cidade pelo valor promocional de R$ 497,00."
+                                href="https://wa.me/5538999999999?text=Quero aplicar para a licença gratuita inicial."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-orange-500/40 transform transition-all hover:scale-105 whitespace-nowrap flex items-center justify-center gap-2 text-lg"
                               >
-                                  Garantir Minha Cidade <ArrowRight className="w-5 h-5" />
+                                  {/* Updated Button Text */}
+                                  Aplicar para Licença Grátis <ArrowRight className="w-5 h-5" />
                               </a>
                               <p className="text-xs text-slate-400 text-center">
-                                  <Lock className="w-3 h-3 inline mr-1"/> Compra Segura • Garantia de 7 dias
+                                  <Lock className="w-3 h-3 inline mr-1"/> Processo Seletivo Sem Custo
                               </p>
                           </div>
                       </div>
                       
-                      {/* Price Tiers Logic - NEW */}
+                      {/* Price Tiers Logic */}
                       <div className="mt-8 pt-6 border-t border-slate-100">
                           <p className="text-sm font-bold text-slate-700 mb-3 uppercase tracking-wide text-center md:text-left">
                               Cronograma de Preços (Escassez Real)
@@ -433,38 +437,26 @@ const LicenseeLanding: React.FC = () => {
                                       <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
                                       <span className="text-sm font-bold text-green-800">LOTE 1: Primeiras 5 Cidades</span>
                                   </div>
-                                  <span className="text-lg font-black text-green-700">R$ 497,00</span>
+                                  <span className="text-lg font-black text-green-700">R$ 2.497,00</span>
                               </div>
                               <div className="flex items-center justify-between p-3 bg-slate-50 border border-slate-100 rounded-lg opacity-60">
                                   <div className="flex items-center gap-2">
                                       <div className="w-3 h-3 rounded-full bg-slate-300"></div>
                                       <span className="text-sm font-medium text-slate-600">LOTE 2: Próximas 15 Cidades</span>
                                   </div>
-                                  <span className="text-sm font-bold text-slate-500">R$ 4.997,00</span>
+                                  <span className="text-sm font-bold text-slate-500">R$ 14.997,00</span>
                               </div>
                               <div className="flex items-center justify-between p-3 bg-slate-50 border border-slate-100 rounded-lg opacity-60">
                                   <div className="flex items-center gap-2">
                                       <div className="w-3 h-3 rounded-full bg-slate-300"></div>
                                       <span className="text-sm font-medium text-slate-600">LOTE 3: A partir da 21ª Cidade</span>
                                   </div>
-                                  <span className="text-sm font-bold text-slate-500">R$ 9.997,00</span>
+                                  <span className="text-sm font-bold text-slate-500">R$ 29.997,00</span>
                               </div>
                           </div>
                       </div>
 
-                      {/* Fees Explanation */}
-                      <div className="mt-6 pt-6 border-t border-slate-100">
-                          <div className="grid grid-cols-2 gap-4 text-sm">
-                              <div className="bg-slate-50 p-3 rounded-lg">
-                                  <span className="block text-slate-500 text-xs">Royalties (Fixo)</span>
-                                  <span className="font-bold text-slate-900">5% sobre faturamento</span>
-                              </div>
-                              <div className="bg-slate-50 p-3 rounded-lg">
-                                  <span className="block text-slate-500 text-xs">Fundo de Marketing</span>
-                                  <span className="font-bold text-slate-900">10% (Reinvestido em ADS)</span>
-                              </div>
-                          </div>
-                      </div>
+                      {/* REMOVED ROYALTIES SECTION HERE */}
                   </div>
               </div>
               

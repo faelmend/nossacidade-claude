@@ -16,6 +16,8 @@ import AdminDashboard from './pages/AdminDashboard';
 import SuperAdminDashboard from './pages/SuperAdminDashboard';
 import BusinessDashboard from './pages/BusinessDashboard';
 import LicenseeLanding from './pages/LicenseeLanding';
+import MasterPrompt from './pages/MasterPrompt';
+import WordpressConverter from './pages/WordpressConverter';
 
 // Layout wrapper to ensure Navbar and Footer are present on inner pages
 const MainLayout = () => (
@@ -39,6 +41,12 @@ function App() {
         <Route path="/seja-licenciado" element={<MainLayout />}>
              <Route index element={<LicenseeLanding />} />
         </Route>
+
+        {/* Master Prompt & Backup Tool */}
+        <Route path="/master-prompt" element={<MasterPrompt />} />
+
+        {/* WordPress Converter Tool */}
+        <Route path="/wp-converter" element={<WordpressConverter />} />
 
         {/* Auth & Portals (No MainLayout to keep separate context) */}
         <Route path="/admin/login" element={<AdminLogin />} />
